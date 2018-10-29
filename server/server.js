@@ -10,7 +10,7 @@ const userRouter = require('./routes/user.router');
 
 // Body parser middleware
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Passport Session Configuration
 app.use(sessionConfig);
@@ -26,9 +26,8 @@ app.use('/api/user', userRouter);
 app.use(express.static('server/public'));
 
 const PORT = process.env.PORT || 5000;
-const FILESTACK = process.env.FILESTACK;
 
 /** Listen * */
 app.listen(PORT, () => {
-    // console.log(`Listening on port: ${PORT}`);
+    console.log(`Listening on port: ${PORT}`);
 });

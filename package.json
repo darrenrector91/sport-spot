@@ -2,15 +2,16 @@
   "name": "bearsapp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/darrenrector91/sport-spot.git"
   },
-  "author": "",
+  "author": "Darren Rector",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/darrenrector91/sport-spot/issues"
@@ -19,6 +20,8 @@
   "dependencies": {
     "angular": "^1.7.5",
     "angular-animate": "^1.7.5",
+    "angular-aria": "^1.7.5",
+    "angular-bootstrap-md": "^6.2.6",
     "angular-material": "^1.1.10",
     "angular-messages": "^1.7.5",
     "angular-route": "^1.7.5",
@@ -33,5 +36,8 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "pg": "^7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
   }
 }
