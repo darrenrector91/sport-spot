@@ -1,5 +1,36 @@
-<header ng-include="'/views/partials/login.header.html'"></header>
+<header ng-include="'/views/partials/home.header.html'"></header>
 
 <body class="homeContainer">
-    <h1>Home.html</h1>
+    <div layout="row">
+        <div class="firstRow" flex="50%">News Feed
+            <table st-table="rowCollection" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>first name</th>
+                        <th>last name</th>
+                        <th>birth date</th>
+                        <th>balance</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="row in rowCollection">
+                        <td>{{row.firstName}}</td>
+                        <td>{{row.lastName}}</td>
+                        <td>{{row.birthDate}}</td>
+                        <td>{{row.balance}}</td>
+                        <td>{{row.email}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div layout="column" flex="50%">
+            <div class="secondRow" flex="33">Standings</div>
+            <div class="firstColumn" flex="33">Schedule</div>
+        </div>
+    </div>
+    <!-- <div layout="column">
+        <div class="firstColumn" flex>First item in column</div>
+        <div class="secondColumn" flex>Second item in column</div>
+    </div> -->
 </body>

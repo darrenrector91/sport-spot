@@ -1,9 +1,9 @@
 var myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngMessages'])
   .config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-      .primaryPalette('lime')
+      .primaryPalette('blue')
       .warnPalette('red')
-      .accentPalette('blue')
+      .accentPalette('lime')
       .backgroundPalette('grey')
       .dark();
   });

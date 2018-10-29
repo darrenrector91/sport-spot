@@ -25,6 +25,7 @@
     "angular-material": "^1.1.10",
     "angular-messages": "^1.7.5",
     "angular-route": "^1.7.5",
+    "angular-smart-table": "^2.1.11",
     "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
     "cookie-session": "^2.0.0-beta.3",

@@ -1,0 +1,42 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+}
+
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+    background-color: #FFF2E0;
+}
+
+.bannerTitle {
+    margin: 20px;
+}
+
+.firstRow {
+    border: 2px solid indianred;
+    height: 600px;
+
+}
+
+.secondRow {
+    border: 2px solid yellowgreen;
+    height: 100px;
+
+}
+
+.firstColumn {
+    border: 2px solid blue;
+}
+
+.secondColumn {
+    border: 2px solid red;
+}
+
+div {
+    margin: 20px;
+}
