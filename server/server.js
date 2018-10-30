@@ -19,6 +19,22 @@ app.use(sessionConfig);
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Solve CORS issue
+
+
+var app = angular.module('corsApp', []);
+
+
+app.config(['$httpProvider', function ($httpProvider) {
+
+    $httpProvider.defaults.useXDomain = true;
+
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+}
+
+]);
+
 /* Routes */
 app.use('/api/user', userRouter);
 
