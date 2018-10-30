@@ -1,11 +1,9 @@
 <header ng-include="'/views/partials/home.header.html'"></header>
 
 <body class="homeContainer">
-    <!-- {{vm.teams.list}} -->
     <div class="grid catchTable table table-hover" layout="horizontal" layout-align="center center" ng-cloak class="md-inline-form"
         layout-wrap>
-        <!-- <md-button class="md-raised md-accent btnSearch" ng-click="vm.getResources()">Submit</md-button> -->
-        <table id="standings-table">
+        <table id="standings-table" flex="66">
             <thead>
                 <tr>
                     <th>Team</th>
@@ -36,5 +34,167 @@
                 </tr>
             </tbody>
         </table>
+
+    </div>
+    <div class="table table-hover" layout="horizontal" layout-align="center center" ng-cloak class="md-inline-form"
+        layout-wrap>
+        <table id="schedule-table" flex="66">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Date</th>
+                    <th>Opponent</th>
+                    <th>W/L</th>
+                    <th>Result</th>
+                    <th>Record</th>
+                </tr>
+            </thead>
+            <tbody <tr class="standings-table-row">
+                <tr>
+                    <td>1</td>
+                    <td>09/09</td>
+                    <td>at GreenBay</td>
+                    <td>L</td>
+                    <td>23-24</td>
+                    <td>0-1</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>9/17</td>
+                    <td>Seattle</td>
+                    <td>W</td>
+                    <td>24-17</td>
+                    <td>1-1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>9/23</td>
+                    <td>@ Arizona</td>
+                    <td>W</td>
+                    <td>16-14</td>
+                    <td>2-1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>9/30</td>
+                    <td>Tampa Bay</td>
+                    <td>W</td>
+                    <td>48-10</td>
+                    <td>3-1</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td>BYE WEEK</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>10/14</td>
+                    <td>@ Miami</td>
+                    <td>L</td>
+                    <td>31-28 OT</td>
+                    <td>3-2</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>10/21</td>
+                    <td>New England</td>
+                    <td>L</td>
+                    <td>38-31</td>
+                    <td>3-3</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>10/28</td>
+                    <td>Jets</td>
+                    <td>W</td>
+                    <td>24-10</td>
+                    <td>4-3</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>11/4</td>
+                    <td>@ Buffalo</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11/11</td>
+                    <td>Detroit</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>11/18</td>
+                    <td>Minnesota</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>11/22 Thanksgiving</td>
+                    <td>@ Detroit</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>12/2</td>
+                    <td>@ New York Giants</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>12/9</td>
+                    <td>Los Angeles Rams</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>12/16</td>
+                    <td>Green Bay</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>12/23</td>
+                    <td>@ San Franscisco</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>12/30</td>
+                    <td>@ Minnesota</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+
+
+
+
+            </tbody>
+        </table>
+
     </div>
 </body>

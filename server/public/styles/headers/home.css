@@ -44,3 +44,13 @@ header {
 div {
     margin: 20px;
 }
+
+/* TABLE STYLING */
+
+td {
+    text-align: left;
+}
+
+th {
+    text-align: left;
+}
