@@ -1,22 +1,17 @@
 myApp.controller('StandingsController', ['StandingsService', function (StandingsService) {
-    console.log('StandingsController created!');
+    // console.log('StandingsController created!');
 
     var self = this;
+    self.standings = StandingsService.standings;
+    self.teams = StandingsService.teams;
+
 
     // search function
     self.getResources = function () {
         StandingsService.getResources();
-        self.getResources = "";
 
     }
 
-
-    // search function
-    // self.searchSwapi = function (resource, keyword) {
-    //     SwapiService.searchSwapi(resource, keyword);
-    //     self.searchSwapi = " ";
-
-    // }
-
+    self.getResources();
 
 }]);

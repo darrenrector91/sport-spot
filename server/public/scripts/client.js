@@ -10,7 +10,7 @@ var myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngMessages'])
 
 /// Routes ///
 myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-  console.log('client loaded!')
+  // console.log('client loaded!')
   $routeProvider
     .when('/', {
       redirectTo: 'home'

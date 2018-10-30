@@ -1,10 +1,10 @@
 <header ng-include="'/views/partials/home.header.html'"></header>
 
 <body class="homeContainer">
-    <div data-ng-init="searchStandings()"></div>
+    <!-- {{vm.teams.list}} -->
     <div class="grid catchTable table table-hover" layout="horizontal" layout-align="center center" ng-cloak class="md-inline-form"
         layout-wrap>
-        <md-button class="md-raised md-accent btnSearch" ng-click="vm.getResources()">Submit</md-button>
+        <!-- <md-button class="md-raised md-accent btnSearch" ng-click="vm.getResources()">Submit</md-button> -->
         <table id="standings-table">
             <thead>
                 <tr>
@@ -20,29 +20,19 @@
                     <th>Streak</th>
                 </tr>
             </thead>
-            <tbody ng-repeat="items in vm.standings.list track by $index">
-            <tbody>
-                {{vm.standings}}
-                <!-- <tr class="catchTableRow">
-                    <td>Bears</td>
-                    <td>4</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>.571</td>
-                    <td>194</td>
-                    <td>144</td>
-                    <td>3-1</td>
-                    <td>1-2</td>
-                    <td>W1</td>
-                </tr> -->
+            <tbody ng-repeat="items in vm.teams.list track by $index">
                 <tr class="standings-table-row">
-                    <td>{{items.date | date:'MM-dd-yyyy'}}</td>
-                    <td>{{items.event_city}}</td>
-                    <td>{{items.event_state}}</td>
-                    <td>{{items.species}}</td>
-                    <td>{{items.rod}}</td>
-                    <td>{{items.reel}}</td>
-                    <td>{{items.tackle_bait}}</td>
+                    <td>{{items.market}}</td>
+                    <td>{{items.wins}}</td>
+                    <td>{{items.losses}}</td>
+                    <td>{{items.ties}}</td>
+                    <td>{{items.win_pct}}</td>
+                    <td>{{items.points_for}}</td>
+                    <td>{{items.points_against}}</td>
+                    <td>{{items.records[3].record.wins}}-{{items.records[3].record.losses}}</td>
+                    <td>{{items.records[5].record.wins}}-{{items.records[5].record.losses}}</td>
+                    <td>{{items.streak.desc}}</td>
+
                 </tr>
             </tbody>
         </table>
