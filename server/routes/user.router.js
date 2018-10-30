@@ -7,9 +7,12 @@ const router = express.Router();
 
 
 // Handles Ajax request for user information if user is authenticated
-router.get('/', (req, res) => {
+router.get('/', (req, res, next) => {
   // check if logged in
   if (req.isAuthenticated()) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
     // send back user object from database
     res.send(req.user);
   } else {

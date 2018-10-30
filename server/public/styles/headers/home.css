@@ -14,7 +14,11 @@ header {
 }
 
 .bannerTitle {
-    margin: 20px;
+    margin: 4px;
+}
+
+.banner-subtitle {
+    float: left;
 }
 
 .firstRow {
