@@ -16,7 +16,7 @@ myApp.service('StandingsService', ['$http', function ($http) {
     self.getResources = function () {
         $http({
             method: 'GET',
-            url: 'http://api.sportradar.us/nfl/official/trial/v5/en/teams/97354895-8c77-4fd4-a860-32e62ea7382a/full_roster.json?api_key=37eew9vyws8rp5etrfqbtnp2',
+            url: 'http://api.sportradar.us/nfl/official/trial/v5/en/seasons/2018/standings.json?api_key=37eew9vyws8rp5etrfqbtnp2',
         }).then(function (response) {
             self.resources.list = response.data;
             console.log(response);
