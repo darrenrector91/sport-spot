@@ -36,8 +36,7 @@
         </table>
 
     </div>
-    <div class="table table-hover" layout="horizontal" layout-align="center center" ng-cloak class="md-inline-form"
-        layout-wrap>
+    <div class="table" layout="horizontal" layout-align="center center" ng-cloak class="md-inline-form" layout-wrap>
         <table id="schedule-table" flex="66">
             <thead>
                 <tr>
@@ -196,5 +195,11 @@
             </tbody>
         </table>
 
+    </div>
+    <div class="article-wrapper">
+        <h2 class="articles-title">Bears News Feed</h2>
+        <div class="articles" ng-repeat="articles in vm.articles.list track by $index">
+            <a href="{{articles.link}}" class="article-link" target="_blank">{{articles.article}}</a>
+        </div>
     </div>
 </body>

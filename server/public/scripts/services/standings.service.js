@@ -11,6 +11,10 @@ myApp.service('StandingsService', ['$http', function ($http) {
         list: []
     }
 
+    self.articles = {
+        list: []
+    }
+
     // get resources function
     self.getResources = function () {
         $http({
@@ -22,6 +26,18 @@ myApp.service('StandingsService', ['$http', function ($http) {
             var teams = (self.standings.list.data.conferences[1].divisions[1]);
             var getTeamNames = teams.teams;
             self.teams.list = getTeamNames;
+        })
+    };
+
+    // get article data form firebase database
+    self.getResources = function () {
+        $http({
+            method: 'GET',
+            url: '',
+        }).then(function (response) {
+            self.articles.list = response;
+            console.log(response);
+
         })
     };
 
